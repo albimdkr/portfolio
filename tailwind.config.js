@@ -2,8 +2,15 @@
 module.exports = {
   content: ['index.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter'],
+      },
+      colors: {
+        primary: '#186F65',
+      },
+    },
   },
   plugins: [],
-}
+};
 
