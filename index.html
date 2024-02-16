@@ -17,8 +17,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:wght@300;600&family=Manrope:wght@300;600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="font-inter">
+<body>
 
+    <!-- HEADER: section start -->
+    <header class="bg-transparent absoulute top-0 left-0 w-full flex-items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">ALBIDEV</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                        <span class="hamburger-line origin-top-left transition duration-300"></span>
+                        <span class="hamburger-line transition duration-300"></span>
+                        <span class="hamburger-line origin-bottom-left transition duration-300"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER: section end -->
+    
 
     <!-- HERO section start -->
     <section id="home" class="pt-36">
@@ -26,7 +45,7 @@
             <div class="flex flex-wrap">
                 <!-- Text -->
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-3xl md:text-xl">Hello!👋 <span class="block font-bold text-4xl lg:text-5xl">I'm <span class="text-primary">Albi </span>Mudakar</span></h1>
+                    <h1 class="text-base font-semibold md:text-xl">Hello!👋 <span class="block font-bold text-4xl lg:text-5xl">I'm <span class="text-primary">Albi </span>Mudakar</span></h1>
                     <h2 class="font-medium mb-2.5 text-slate-700 lg:text-1xl">Cloud Engineer | Web Developer | Network Enthusiast.</h2>
                     <p class="text-secondary leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-lg hover:shadow-lg hover:opacity-85 transistion duration-300 ease-in-out">Contact</a>
@@ -82,5 +101,7 @@
     </section>
     <!-- ABOUT section end -->
 
+
+<script src="/public/assets/js/script.js"></script>
 </body>
 </html>
