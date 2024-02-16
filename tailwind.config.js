@@ -12,12 +12,14 @@ module.exports = {
       },
       colors: {
         primary: '#186F65',
-        secondary: '#64748b',
-        dark: '#0f172a',
+        secondary: '#3BA793',
+        accent: ' #D9EFE0',
+        primaryDark: '#0f172a',
+        secondaryGray: '#64748b',
       },
       screens: {
-        '2xl': '1320px'
-      }
+        '2xl': '1320px',
+      },
     },
   },
   plugins: [],
