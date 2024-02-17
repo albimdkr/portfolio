@@ -593,11 +593,37 @@ video {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 239 224 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .icon-about:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 167 147 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 167 147 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-footer {
+  margin-right: 0.75rem;
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.icon-footer:hover {
   --tw-border-opacity: 1;
   border-color: rgb(59 167 147 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
