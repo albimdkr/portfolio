@@ -31,7 +31,7 @@ body {
 
 @layer components {
     .icon-about {
-        @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-secondary;
+        @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-secondary hover:bg-secondary hover:text-white text-secondaryGray;
     }
     
     .hamburger-line {
