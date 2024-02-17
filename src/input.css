@@ -30,6 +30,28 @@ body {
 }
 
 @layer components {
+
+    .header-link {
+        @apply text-base text-slate-900 py-2 mx-8 group-hover:text-primary flex;
+    }
+
+    .header-link:hover {
+        @apply text-secondary transition duration-200;
+    }
+
+    .header-link__label {
+        @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
+    }
+
+    .header-link:hover .header-link__label {
+        @apply text-white;
+    }
+
+    .footer-link--soon {
+        @apply cursor-not-allowed hover:text-slate-400;
+        opacity: 1;
+    }
+
     .icon-about {
         @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 bg-accent hover:border-secondary hover:bg-secondary hover:text-white text-secondaryGray;
     }
@@ -40,4 +62,26 @@ body {
     .hamburger-line {
         @apply w-[30px] h-[2px] my-2 block bg-slate-950;
     }
+
+    .footer-link {
+        @apply flex h-8 items-center gap-2 whitespace-nowrap text-base leading-5 w-full;
+    }
+
+    .footer-link:hover {
+        @apply text-secondary transition duration-200;
+    }
+
+    .footer-link__label {
+        @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
+    }
+
+    .footer-link:hover .footer-link__label {
+        @apply text-white;
+    }
+
+    .footer-link--soon {
+        @apply cursor-not-allowed hover:text-slate-400;
+        opacity: 1;
+    }
+
 }
