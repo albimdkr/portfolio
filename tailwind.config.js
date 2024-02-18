@@ -1,27 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: ["index.html"],
   theme: {
     container: {
       center: true,
-      padding: '16px',
+      padding: "16px",
     },
     extend: {
       fontFamily: {
-        inter: ['Inter'],
+        inter: ["Inter"],
       },
       colors: {
-        primary: '#186F65',
-        secondary: '#3BA793',
-        accent: ' #D9EFE0',
-        primaryDark: '#0f172a',
-        secondaryGray: '#64748b',
+        primary: "#186F65",
+        secondary: "#3BA793",
+        accent: " #D9EFE0",
+        primaryDark: "#0f172a",
+        secondaryGray: "#64748b",
       },
       screens: {
-        '2xl': '1320px',
+        "2xl": "1320px",
       },
     },
   },
   plugins: [],
 };
-

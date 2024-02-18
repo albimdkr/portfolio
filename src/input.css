@@ -3,85 +3,82 @@
 @tailwind utilities;
 
 body {
-    @apply font-inter;
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(173, 64%, 26%, 0.09)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  @apply font-inter;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(173, 64%, 26%, 0.09)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
 }
 
 /* navbar fixed */
 .navbar-fixed {
-    @apply fixed z-[999] bg-white bg-opacity-70;
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); 
-    transition-duration: 300ms;
+  @apply fixed z-[999] bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  transition-duration: 300ms;
 }
-
 
 /* Hamburger */
 .hamburger-active > span:nth-child(1) {
-    @apply rotate-45;
+  @apply rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
-    @apply scale-0;
+  @apply scale-0;
 }
 
 .hamburger-active > span:nth-child(3) {
-    @apply -rotate-45;
+  @apply -rotate-45;
 }
 
 @layer components {
+  .header-link {
+    @apply mx-8 flex py-2 text-base text-slate-900 group-hover:text-primary;
+  }
 
-    .header-link {
-        @apply text-base text-slate-900 py-2 mx-8 group-hover:text-primary flex;
-    }
+  .header-link:hover {
+    @apply text-secondary transition duration-200;
+  }
 
-    .header-link:hover {
-        @apply text-secondary transition duration-200;
-    }
+  .header-link__label {
+    @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
+  }
 
-    .header-link__label {
-        @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
-    }
+  .header-link:hover .header-link__label {
+    @apply text-white;
+  }
 
-    .header-link:hover .header-link__label {
-        @apply text-white;
-    }
+  .footer-link--soon {
+    @apply cursor-not-allowed hover:text-slate-400;
+    opacity: 1;
+  }
 
-    .footer-link--soon {
-        @apply cursor-not-allowed hover:text-slate-400;
-        opacity: 1;
-    }
+  .icon-about {
+    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-accent text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
+  }
+  .icon-footer {
+    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-secondary hover:bg-secondary hover:text-white;
+  }
 
-    .icon-about {
-        @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 bg-accent hover:border-secondary hover:bg-secondary hover:text-white text-secondaryGray;
-    }
-    .icon-footer {
-        @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-secondary hover:bg-secondary hover:text-white text-slate-300;
-    }
-    
-    .hamburger-line {
-        @apply w-[30px] h-[2px] my-2 block bg-slate-950;
-    }
+  .hamburger-line {
+    @apply my-2 block h-[2px] w-[30px] bg-slate-950;
+  }
 
-    .footer-link {
-        @apply flex h-8 items-center gap-2 whitespace-nowrap text-base leading-5 w-full;
-    }
+  .footer-link {
+    @apply flex h-8 w-full items-center gap-2 whitespace-nowrap text-base leading-5;
+  }
 
-    .footer-link:hover {
-        @apply text-secondary transition duration-200;
-    }
+  .footer-link:hover {
+    @apply text-secondary transition duration-200;
+  }
 
-    .footer-link__label {
-        @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
-    }
+  .footer-link__label {
+    @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
+  }
 
-    .footer-link:hover .footer-link__label {
-        @apply text-white;
-    }
+  .footer-link:hover .footer-link__label {
+    @apply text-white;
+  }
 
-    .footer-link--soon {
-        @apply cursor-not-allowed hover:text-slate-400;
-        opacity: 1;
-    }
-
+  .footer-link--soon {
+    @apply cursor-not-allowed hover:text-slate-400;
+    opacity: 1;
+  }
 }
