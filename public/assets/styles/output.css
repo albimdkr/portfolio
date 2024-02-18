@@ -632,6 +632,13 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.wrapper-max {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 120rem;
+}
+
 .footer-link--soon {
   cursor: not-allowed;
 }
@@ -693,16 +700,6 @@ video {
   background-color: rgb(59 167 147 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hamburger-line {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: block;
-  height: 2px;
-  width: 30px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }
 
 .footer-link {
@@ -963,14 +960,6 @@ video {
 
 .grow {
   flex-grow: 1;
-}
-
-.origin-bottom-left {
-  transform-origin: bottom left;
-}
-
-.origin-top-left {
-  transform-origin: top left;
 }
 
 .-rotate-90 {
@@ -1527,6 +1516,14 @@ body {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
 
   .md\:text-lg {
