@@ -40,11 +40,11 @@
             >
           </div>
           <div class="flex items-center px-4">
-            <button
+            <!-- <button
               id="hamburger"
               name="hamburger"
               type="button"
-              class="absolute right-4 block lg:hidden"
+              class="absolute right-4 block hidden"
             >
               <span
                 class="hamburger-line origin-top-left transition duration-300"
@@ -53,35 +53,94 @@
               <span
                 class="hamburger-line origin-bottom-left transition duration-300"
               ></span>
-            </button>
+            </button> -->
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg transition duration-300 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 flex w-full max-w-full rounded-lg transition duration-300 lg:static lg:rounded-none lg:bg-transparent"
             >
-              <ul class="block lg:flex">
+              <ul class="flex">
                 <li class="group">
-                  <a href="#home" class="header-link">Home</a>
+                  <a href="#home" class="header-link">Project</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="header-link">About</a>
+                  <a href="#portfolio" class="header-link">Blog</a>
                 </li>
-                <li class="group">
-                  <a href="#portfolio" class="header-link">Portfolio</a>
+                <li class="lg:hidden">
+                  <div class="relative">
+                    <button
+                      class="nav-link nav-link--label"
+                      type="button"
+                      data-headlessui-state
+                    >
+                      Work
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-3 w-3 -rotate-90 rotate-90"
+                      >
+                        <path
+                          d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <!-- <a href="#portfolio" class="header-link">Work</a> -->
+                  </div>
                 </li>
-                <li class="group">
-                  <a href="#experience" class="header-link">Experience</a>
-                </li>
-                <li class="group">
-                  <a href="#credentials" class="header-link">Credentials</a>
-                </li>
-                <li class="group">
-                  <a href="#blog" class="header-link">Blog</a>
-                </li>
-                <li class="group">
-                  <a href="#contact" class="header-link">Contact</a>
+                <li class="hidden lg:block">
+                  <div class="flex">
+                    <div class="nav-link nav-link--label">
+                      Work
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-3 w-3"
+                      >
+                        <path
+                          d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <ul class="flex items-center">
+                      <li class="group">
+                        <a href="#experience" class="header-link">Experience</a>
+                      </li>
+                      <li class="group">
+                        <a href="#credentials" class="header-link">Skills</a>
+                      </li>
+                      <li class="group">
+                        <a href="#contact" class="header-link">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>
+            <ul class="flex items-center">
+              <li class="mr-2">
+                <button
+                  class="flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="hidden lg:block">More</span>
+                </button>
+                <!-- <a href="#" class="header-link rounded-lg bg-accent px-4 py-2"
+                  >Quick Access</a
+                > -->
+              </li>
+            </ul>
           </div>
         </div>
       </div>
