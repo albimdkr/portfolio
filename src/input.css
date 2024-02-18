@@ -44,6 +44,14 @@ body {
     @apply text-white;
   }
 
+  .nav-link {
+    @apply flex items-center gap-1 text-sm;
+  }
+
+  .nav-link--label {
+    @apply rounded-full bg-accent px-5 py-3;
+  }
+
   .footer-link--soon {
     @apply cursor-not-allowed hover:text-slate-400;
     opacity: 1;
