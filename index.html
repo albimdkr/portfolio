@@ -47,7 +47,7 @@
                   class="z-50 flex items-center gap-1.5 font-[1000] leading-none"
                 >
                   <div
-                    class="border-box flex h-9 w-9 items-center justify-center rounded-xl border-2 border-accent bg-primary sm:h-6 sm:w-6 sm:rounded-lg dark:border-accent dark:bg-secondary"
+                    class="border-box border-accent1 dark:border-accent1 flex h-9 w-9 items-center justify-center rounded-xl border-2 bg-primary dark:bg-secondary sm:h-6 sm:w-6 sm:rounded-lg"
                   >
                     <div
                       class="h-3.5 w-0.5 rotate-12 rounded-full bg-white sm:h-3 sm:w-0.5"
@@ -56,7 +56,7 @@
                   <div class="m-0 hidden text-xl sm:block">
                     <span class="font-inter text-slate-900 dark:text-primary"
                       >albi</span
-                    ><span class="text-accent-600 font-inter dark:text-primary"
+                    ><span class="text-accent1-600 font-inter dark:text-primary"
                       >mdkr</span
                     >
                   </div>
@@ -78,12 +78,11 @@
                 <li class="lg:hidden">
                   <div class="relative">
                     <button
-                      class="nav-link nav-link--label"
+                      class="nav-link nav-link--label animate ml-2"
+                      id="button-work"
                       type="button"
-                      data-headlessui-state
                     >
-                      Work
-                      <svg
+                      Work<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -95,11 +94,20 @@
                       </svg>
                     </button>
                     <!-- <a href="#portfolio" class="header-link">Work</a> -->
+                    <div
+                      class="animate border-divider-light dark:border-divider-dark absolute top-16 flex hidden w-40 flex-col rounded-2xl border bg-white/70 p-2 backdrop-blur"
+                      id="menu-item"
+                    >
+                      <a class="nav-link h-8 text-xs" href="#"
+                        >Skills &amp; Tools</a
+                      ><a class="nav-link h-8 text-xs" href="#">Experience</a
+                      ><a class="nav-link h-8 text-xs" href="#">Contact</a>
+                    </div>
                   </div>
                 </li>
                 <li class="hidden lg:block">
                   <div class="flex">
-                    <div class="nav-link nav-link--label">
+                    <div class="nav-link nav-link--label--work rounded-full">
                       Work
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -129,27 +137,59 @@
             </nav>
           </div>
           <ul class="flex items-center">
-            <li class="mr-2">
+            <li class="mr-2 hidden lg:block">
               <button
-                class="flex items-center justify-center gap-2 rounded-lg bg-accent px-2 py-2 lg:px-5"
+                class="bg-accent1 nav-link--label animate flex items-center justify-center gap-2 rounded-xl px-2 py-2 lg:px-5"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  class="fill-current"
                 >
+                  <title>GitHub</title>
                   <path
-                    fill-rule="evenodd"
-                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                    clip-rule="evenodd"
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                   />
                 </svg>
-                <span class="hidden lg:block">More</span>
+                <span class="hidden lg:block">github</span>
               </button>
-              <!-- <a href="#" class="header-link rounded-lg bg-accent px-4 py-2"
+              <!-- <a href="#" class="header-link rounded-lg bg-accent1 px-4 py-2"
               >Quick Access</a
-            > -->
+              > -->
+            </li>
+            <li class="hidden sm:block">
+              <div
+                class="ml-2 mr-4 h-3 w-[1px] bg-slate-200 dark:bg-slate-700"
+              ></div>
+            </li>
+            <li>
+              <button
+                id="btn-theme"
+                class="bg-accent1 hover:bg-accent2 animate h-10 w-10 rounded-xl p-2 dark:hover:bg-gray-200"
+              >
+                <svg
+                  class="block fill-slate-700 dark:hidden"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden fill-slate-700 dark:block"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
@@ -177,12 +217,12 @@
             </p>
             <a
               href="#"
-              class="transistion rounded-lg bg-primary px-8 py-3 text-base font-semibold text-white duration-200 ease-in-out hover:bg-secondary hover:shadow-lg"
+              class="animate rounded-lg bg-primary px-8 py-3 text-base font-semibold text-white hover:bg-secondary hover:shadow-lg"
               >Contact</a
             >
             <a
               href="#"
-              class="transistion mx-2 rounded-lg bg-accent px-6 py-3 text-base font-semibold text-primary duration-200 ease-in-out hover:bg-primary hover:text-white hover:shadow-lg"
+              class="bg-accent1 hover:bg-accent2 animate mx-2 rounded-lg px-6 py-3 text-base font-semibold text-primary hover:shadow-lg"
               >Resume CV</a
             >
           </div>
@@ -548,10 +588,10 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Aliquid, quidem?
                 </p>
-                <!-- <a href="#" class="text-primary text-sm bg-accent px-2.5 py-2 rounded-full text-center hover:bg-primary hover:text-white hover:shadow-md transition duration-200 my-3">Selengkapnya</a>  -->
+                <!-- <a href="#" class="text-primary text-sm bg-accent1 px-2.5 py-2 rounded-full text-center hover:bg-primary hover:text-white hover:shadow-md transition duration-200 my-3">Selengkapnya</a>  -->
                 <a
                   href="#"
-                  class="group relative flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm text-primary transition hover:bg-accent"
+                  class="hover:bg-accent1 group relative flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm text-primary transition"
                 >
                   <span
                     class="font-semibold transition group-hover:text-green-700"
@@ -832,7 +872,7 @@
     <!-- BACK TO TOP section start -->
     <a href="#home" id="to-top">
       <div
-        class="hover:animated-pulse animate fixed bottom-5 right-5 flex h-10 w-10 cursor-pointer rounded-full bg-accent"
+        class="hover:animated-pulse animate bg-accent1 fixed bottom-5 right-5 flex h-10 w-10 cursor-pointer rounded-full"
       >
         <!-- <i class=""></i> -->
 

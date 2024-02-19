@@ -49,12 +49,21 @@ body {
   }
 
   .nav-link--label {
-    @apply rounded-full bg-accent px-5 py-3;
+    @apply bg-accent1 hover:bg-accent2 cursor-pointer rounded-full px-5 py-3;
+  }
+
+  .nav-link--label--work {
+    @apply bg-accent1 hover:bg-accent2 lg:hover:bg-accent1 rounded-full px-5 py-3 lg:cursor-ew-resize;
   }
 
   .wrapper-max {
     @apply mx-auto w-full;
     max-width: 120rem;
+  }
+
+  .border-divider-light {
+    opacity: 1;
+    border-color: #e2e8f0;
   }
 
   .footer-link--soon {
@@ -63,7 +72,7 @@ body {
   }
 
   .icon-about {
-    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-accent text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
+    @apply bg-accent1 mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
   }
   .icon-footer {
     @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-secondary hover:bg-secondary hover:text-white;
@@ -95,6 +104,6 @@ body {
   }
 
   .animate {
-    @apply transition duration-200;
+    @apply transition duration-200 ease-in-out;
   }
 }
