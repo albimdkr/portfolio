@@ -29,7 +29,7 @@ body {
 
 @layer components {
   .header-link {
-    @apply mx-8 flex py-2 text-base text-slate-900 group-hover:text-primary;
+    @apply mx-2 flex py-2 text-base text-slate-900 group-hover:text-primary lg:mx-8;
   }
 
   .header-link:hover {
