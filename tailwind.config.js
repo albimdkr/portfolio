@@ -18,6 +18,8 @@ module.exports = {
         accent2: "#C4E8D7",
         primaryDark: "#0f172a",
         secondaryGray: "#64748b",
+        dark1: "#161e31",
+        dark2: "#1d263a",
       },
       screens: {
         "2xl": "1320px",
