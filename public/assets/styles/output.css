@@ -1461,12 +1461,9 @@ video {
   color: rgb(89 193 217 / var(--tw-text-opacity));
 }
 
-.text-accent3\/100 {
-  color: rgb(89 193 217 / 1);
-}
-
-.text-accent3\/90 {
-  color: rgb(89 193 217 / 0.9);
+.text-accent6 {
+  --tw-text-opacity: 1;
+  color: rgb(109 184 211 / var(--tw-text-opacity));
 }
 
 .text-primary {
