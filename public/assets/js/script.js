@@ -28,7 +28,7 @@ const navMenu = document.getElementById("nav-menu");
 const menuItem = document.getElementById("menu-item");
 
 btnWork.addEventListener("click", () => {
-  menuItem.classList.toggle("hidden");
+  menuItem.classList.toggle("hidden").add("animate");
 });
 
 // Theme
