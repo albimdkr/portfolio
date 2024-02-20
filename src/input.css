@@ -33,7 +33,7 @@ body {
 
 @layer components {
   .header-link {
-    @apply mx-2 flex py-1 text-base text-slate-900 group-hover:text-primary lg:mx-8;
+    @apply group-hover:text-accent3/100 mx-2 flex py-1 text-base font-semibold text-slate-900 lg:mx-4;
   }
 
   .header-link:hover {
