@@ -632,11 +632,12 @@ video {
 .nav-link--label {
   cursor: pointer;
   border-radius: 9999px;
-  background-color: rgb(89 193 217 / 0.2);
+  background-color: rgb(89 193 217 / 0.25);
+  opacity: 0.8;
 }
 
-.nav-link--label:hover {
-  background-color: rgb(89 193 217 / 0.3);
+:is(.dark .nav-link--label) {
+  background-color: rgb(89 193 217 / 0.1);
 }
 
 .nav-link--label--work-lg {
@@ -648,8 +649,8 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.nav-link--label--work-lg:hover {
-  background-color: rgb(89 193 217 / 0.3);
+:is(.dark .nav-link--label--work-lg) {
+  background-color: rgb(89 193 217 / 0.1);
 }
 
 @media (min-width: 1024px) {
@@ -1358,8 +1359,8 @@ video {
   text-align: center;
 }
 
-.font-inter {
-  font-family: Inter;
+.font-jakarta {
+  font-family: Plus Jakarta Sans;
 }
 
 .text-2xl {
@@ -1437,6 +1438,10 @@ video {
 .text-accent3 {
   --tw-text-opacity: 1;
   color: rgb(89 193 217 / var(--tw-text-opacity));
+}
+
+.text-accent3\/100 {
+  color: rgb(89 193 217 / 1);
 }
 
 .text-accent3\/90 {
@@ -1561,8 +1566,8 @@ body {
   position: fixed;
   z-index: 999;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.7;
-  --tw-backdrop-blur: blur(16px);
+  --tw-bg-opacity: 0.8;
+  --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
@@ -1571,7 +1576,8 @@ body {
 :is(.dark .navbar-fixed) {
   opacity: 1;
   border-color: #e2e8f0;
-  background-color: transparent;
+  background-color: rgb(29 38 58 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.85;
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);

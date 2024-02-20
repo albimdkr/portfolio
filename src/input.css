@@ -8,7 +8,7 @@ body {
 
 /* navbar fixed */
 .navbar-fixed {
-  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark fixed z-[999] bg-white bg-opacity-70 backdrop-blur-lg dark:bg-transparent dark:backdrop-blur-lg;
+  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark fixed z-[999] bg-white bg-opacity-80 backdrop-blur-xl dark:bg-dark1 dark:bg-opacity-85 dark:backdrop-blur-lg;
   transition-duration: 300ms;
 
   /* border-divider-light border-b bg-white/70 backdrop-blur dark:border-divider-dark dark:bg-slate-900/80 fm:hidden */
@@ -53,15 +53,15 @@ body {
   }
 
   .nav-link--label {
-    @apply bg-accent3/20 hover:bg-accent3/30  cursor-pointer rounded-full;
+    @apply bg-accent3/25 dark:bg-accent3/10 cursor-pointer rounded-full opacity-80;
   }
 
   .nav-link--label--work {
     @apply rounded-full bg-accent1 px-5 py-3 hover:bg-accent2 lg:cursor-ew-resize lg:hover:bg-accent1;
   }
 
-  .nav-link--label--work-lg {
-    @apply bg-accent3/20 hover:bg-accent3/30 rounded-full px-5 py-3 lg:cursor-default;
+  .nav-link--label--work-lg {`
+    @apply bg-accent3/20 dark:bg-accent3/10 rounded-full px-5 py-3 lg:cursor-default;
   }
 
   .nav-link--label--a-white {

@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter"],
+        jakarta: ["Plus Jakarta Sans"],
+        sora: ["Sora"],
+        poppins: ["Poppins"],
       },
       colors: {
         primary: "#186F65",
