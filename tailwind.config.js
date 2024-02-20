@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: ["index.html"],
   darkMode: "class",
@@ -14,16 +14,47 @@ module.exports = {
       colors: {
         primary: "#186F65",
         secondary: "#3BA793",
-        accent1: " #D9EFE0",
+        accent1: "#E6F5F2",
         accent2: "#C4E8D7",
+        accent3: "#59C1D9",
+        accent4: "#26828C",
+        accent5: "#0E4459",
         primaryDark: "#0f172a",
         secondaryGray: "#64748b",
-        dark1: "#161e31",
-        dark2: "#1d263a",
+        dark1: "#1d263a",
+        dark2: "#161e31",
+        light1: "#e2e8f0",
+        light2: "#f8fafc",
       },
       screens: {
         "2xl": "1320px",
       },
+      backgroundImage: (theme) => ({
+        "gradient-light-1":
+          "linear-gradient(to bottom, " +
+          theme("colors.light1") +
+          ", " +
+          theme("colors.light2") +
+          ")",
+        "gradient-light-2":
+          "linear-gradient(to bottom, " +
+          theme("colors.light2") +
+          ", " +
+          theme("colors.light1") +
+          ")",
+        "gradient-dark-1":
+          "linear-gradient(to bottom, " +
+          theme("colors.dark1") +
+          ", " +
+          theme("colors.dark2") +
+          ")",
+        "gradient-dark-2":
+          "linear-gradient(to bottom, " +
+          theme("colors.dark2") +
+          ", " +
+          theme("colors.dark1") +
+          ")",
+      }),
     },
   },
   plugins: [],

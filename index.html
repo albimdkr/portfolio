@@ -47,7 +47,7 @@
                   class="z-50 flex items-center gap-1.5 font-[1000] leading-none"
                 >
                   <div
-                    class="border-box border-accent1 dark:border-accent1 flex h-9 w-9 items-center justify-center rounded-xl border-2 bg-primary dark:bg-secondary sm:h-6 sm:w-6 sm:rounded-lg"
+                    class="border-box flex h-9 w-9 items-center justify-center rounded-xl border-2 border-accent1 bg-primary dark:border-accent1 dark:bg-secondary sm:h-6 sm:w-6 sm:rounded-lg"
                   >
                     <div
                       class="h-3.5 w-0.5 rotate-12 rounded-full bg-white sm:h-3 sm:w-0.5"
@@ -123,23 +123,17 @@
                     </div>
                     <ul class="flex items-center">
                       <li class="group">
-                        <a
-                          href="#experience"
-                          class="header-link dark:text-slate-50"
+                        <a href="#experience" class="header-link text-accent3"
                           >Experience</a
                         >
                       </li>
                       <li class="group">
-                        <a
-                          href="#credentials"
-                          class="header-link dark:text-slate-50"
+                        <a href="#credentials" class="header-link text-accent3"
                           >Skills</a
                         >
                       </li>
                       <li class="group">
-                        <a
-                          href="#contact"
-                          class="header-link dark:text-slate-50"
+                        <a href="#contact" class="header-link text-accent3"
                           >Contact</a
                         >
                       </li>
@@ -152,7 +146,7 @@
           <ul class="flex items-center">
             <li class="mr-2 hidden lg:block">
               <button
-                class="bg-accent1 nav-link--label animate flex items-center justify-center gap-2 rounded-xl px-2 py-2 dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50 lg:px-5"
+                class="nav-link--label animate flex items-center justify-center gap-2 rounded-xl bg-accent1 px-2 py-2 dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50 lg:px-5"
               >
                 <svg
                   role="img"
@@ -180,7 +174,7 @@
             <li>
               <button
                 id="btn-theme"
-                class="bg-accent1 hover:bg-accent2 animate h-10 w-10 rounded-xl p-2 dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50"
+                class="animate h-10 w-10 rounded-xl bg-accent1 p-2 hover:bg-accent2 dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50"
               >
                 <svg
                   class="block fill-slate-700 dark:hidden"
@@ -211,11 +205,18 @@
     <!-- HEADER section end -->
 
     <!-- HERO section start -->
-    <section id="home" class="dark:bg-dark1 pt-36">
+    <!-- bg-gradient-to- from-blue-600 to-green-400 -->
+    <section
+      id="home"
+      class="bg-gradient-light-1 dark:bg-gradient-dark-1 pt-36"
+    >
+      <div
+        class="bg-svg-grid__light dark:bg-svg-grid__dark absolute bottom-0 left-0 right-0 top-0 z-0"
+      ></div>
       <div class="container">
         <div class="flex flex-wrap">
           <!-- Text -->
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div class="z-10 w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold md:text-xl">
               Hello!👋
               <span class="block text-4xl font-bold lg:text-5xl"
@@ -235,7 +236,7 @@
             >
             <a
               href="#"
-              class="bg-accent1 hover:bg-accent2 animate mx-2 rounded-lg px-6 py-3 text-base font-semibold text-primary hover:shadow-lg"
+              class="animate mx-2 rounded-lg bg-accent1 px-6 py-3 text-base font-semibold text-primary hover:bg-accent2 hover:shadow-lg"
               >Resume CV</a
             >
           </div>
@@ -255,7 +256,10 @@
     <!-- HERO section end -->
 
     <!-- ABOUT section start -->
-    <section id="about" class="dark:bg-dark2 pb-32 pt-36">
+    <section
+      id="about"
+      class="bg-gradient-light-2 dark:bg-gradient-dark-2 pb-32 pt-36"
+    >
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
@@ -384,7 +388,10 @@
     <!-- ABOUT section end -->
 
     <!-- PROJECT section start -->
-    <section id="portfolio" class="bg-slate-100 pb-16 pt-36">
+    <section
+      id="portfolio"
+      class="bg-gradient-light-1 dark:bg-gradient-dark-1 pb-16 pt-36"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
@@ -467,7 +474,10 @@
     <!-- PROJECT section end -->
 
     <!-- EXPERIENCE section start -->
-    <section id="experience" class="bg-slate-900 pb-32 pt-36">
+    <section
+      id="experience"
+      class="bg-gradient-light-2 dark:bg-gradient-dark-2 pb-32 pt-36"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
@@ -532,39 +542,11 @@
     </section>
     <!-- EXPERIENCE section end -->
 
-    <!-- CLIENTS section start -->
-    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-900">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="mx-auto text-center mb-16">
-                    <h4 class="font-bold text-lg text-primary mb-2 uppercase">Bangkit 2023 H2 Alumni</h4>
-                    <h2 class="font-bold text-white text-3xl sm:text-4xl lg:text-5xl">Cloud Computing</h2>
-                    <p class="font-medium text-md text-secondaryGray md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem voluptates aliquid vero cum cumque.</p>
-                </div>
-            </div>
-
-            <div class="w-full px-4">
-                <div class="flex flex-wrap items-center justify-center">
-                    <a href="https://grow.google/intl/id_id/bangkit/" class="max-w-[200px] mx-4 py-4 grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" target="_blank">
-                        <img src="/public/assets/img/bangkit/bangkit.svg" alt="Bangkit Academy">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="/public/assets/img/bangkit/google.svg" alt="Google" target="_blank">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="/public/assets/img/bangkit/goto.svg" alt="Goto" target="_blank">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-80 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="/public/assets/img/bangkit/traveloka.svg" alt="Traveloka" target="_blank">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- CLIENTS section end -->
-
     <!-- BLOG section start -->
-    <section id="blog" class="bg-slate-100 pb-32 pt-36">
+    <section
+      id="blog"
+      class="bg-gradient-light-1 dark:bg-gradient-dark-1 pb-32 pt-36"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
@@ -604,7 +586,7 @@
                 <!-- <a href="#" class="text-primary text-sm bg-accent1 px-2.5 py-2 rounded-full text-center hover:bg-primary hover:text-white hover:shadow-md transition duration-200 my-3">Selengkapnya</a>  -->
                 <a
                   href="#"
-                  class="hover:bg-accent1 group relative flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm text-primary transition"
+                  class="group relative flex items-center whitespace-nowrap rounded-full px-2.5 py-2 text-sm text-primary transition hover:bg-accent1"
                 >
                   <span
                     class="font-semibold transition group-hover:text-green-700"
@@ -631,7 +613,10 @@
     <!-- BLOG section end -->
 
     <!-- CONTACT section start -->
-    <section id="contact" class="pb-32 pt-36">
+    <section
+      id="contact"
+      class="bg-gradient-light-2 dark:bg-gradient-dark-2 pb-32 pt-36"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
@@ -695,7 +680,10 @@
     <!-- CONTACT section end -->
 
     <!-- FOOTER section start -->
-    <footer class="bg-primaryDark pb-5 pt-24" id="footer-bottom">
+    <footer
+      class="bg-gradient-light-1 dark:bg-gradient-dark-1 pb-5 pt-24"
+      id="footer-bottom"
+    >
       <div class="container flex flex-col-reverse gap-16 lg:flex-row">
         <!-- <div class="flex flex-wrap"> -->
         <div class="flex flex-wrap lg:flex-row">
@@ -885,7 +873,7 @@
     <!-- BACK TO TOP section start -->
     <a href="#home" id="to-top">
       <div
-        class="hover:animated-pulse animate bg-accent1 fixed bottom-5 right-5 flex h-10 w-10 cursor-pointer rounded-full"
+        class="hover:animated-pulse animate fixed bottom-5 right-5 flex h-10 w-10 cursor-pointer rounded-full bg-accent1"
       >
         <!-- <i class=""></i> -->
 

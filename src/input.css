@@ -4,7 +4,16 @@
 
 body {
   @apply font-inter;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(173, 64%, 26%, 0.09)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+@layer utilities {
+  .bg-svg-grid__light {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(226 232 240 / 0.8)' stroke-dasharray='5 3' transform='scale(1%2c -1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+
+  .bg-svg-grid__dark {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(248 250 252 / .025)' stroke-dasharray='5 3' transform='scale(1%2c -1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
 }
 
 /* navbar fixed */
@@ -49,11 +58,11 @@ body {
   }
 
   .nav-link--label {
-    @apply bg-accent1 hover:bg-accent2 cursor-pointer rounded-full px-5 py-3;
+    @apply cursor-pointer rounded-full bg-accent1 px-5 py-3 hover:bg-accent2;
   }
 
   .nav-link--label--work {
-    @apply bg-accent1 hover:bg-accent2 lg:hover:bg-accent1 rounded-full px-5 py-3 lg:cursor-ew-resize;
+    @apply rounded-full bg-accent1 px-5 py-3 hover:bg-accent2 lg:cursor-ew-resize lg:hover:bg-accent1;
   }
 
   .wrapper-max {
@@ -72,7 +81,7 @@ body {
   }
 
   .icon-about {
-    @apply bg-accent1 mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
+    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-accent1 text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
   }
   .icon-footer {
     @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-secondary hover:bg-secondary hover:text-white;
