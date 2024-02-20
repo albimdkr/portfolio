@@ -586,8 +586,8 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
@@ -632,43 +632,48 @@ video {
 .nav-link--label {
   cursor: pointer;
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(230 245 242 / var(--tw-bg-opacity));
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  background-color: rgb(89 193 217 / 0.2);
 }
 
 .nav-link--label:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(196 232 215 / var(--tw-bg-opacity));
+  background-color: rgb(89 193 217 / 0.3);
 }
 
-.nav-link--label--work {
+.nav-link--label--work-lg {
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(230 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(89 193 217 / 0.2);
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.nav-link--label--work:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(196 232 215 / var(--tw-bg-opacity));
+.nav-link--label--work-lg:hover {
+  background-color: rgb(89 193 217 / 0.3);
 }
 
 @media (min-width: 1024px) {
-  .nav-link--label--work {
-    cursor: ew-resize;
+  .nav-link--label--work-lg {
+    cursor: default;
   }
+}
 
-  .nav-link--label--work:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(230 245 242 / var(--tw-bg-opacity));
-  }
+.nav-link--label--a-white {
+  background-color: rgb(203 213 225 / 0.5);
+}
+
+.nav-link--label--a-white:hover {
+  background-color: rgb(203 213 225 / 0.7);
+}
+
+:is(.dark .nav-link--label--a-white) {
+  background-color: rgb(51 65 85 / 0.4);
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+:is(.dark .nav-link--label--a-white:hover) {
+  background-color: rgb(51 65 85 / 0.7);
 }
 
 .wrapper-max {
@@ -998,6 +1003,10 @@ video {
   height: 2.25rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1225,22 +1234,17 @@ video {
   background-color: rgb(255 255 255 / 0.7);
 }
 
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-light-1 {
   background-image: linear-gradient(to bottom, #e2e8f0, #f8fafc);
 }
 
 .bg-gradient-light-2 {
   background-image: linear-gradient(to bottom, #f8fafc, #e2e8f0);
-}
-
-.from-blue-600 {
-  --tw-gradient-from: #2563eb var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-green-400 {
-  --tw-gradient-to: #4ade80 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1319,6 +1323,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-16 {
@@ -1566,7 +1580,6 @@ body {
 }
 
 .navbar-fixed {
-  /* box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); */
   transition-duration: 300ms;
   /* border-divider-light border-b bg-white/70 backdrop-blur dark:border-divider-dark dark:bg-slate-900/80 fm:hidden */
 }
@@ -1710,10 +1723,6 @@ body {
   border-color: rgb(230 245 242 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:bg-accent1\/50) {
-  background-color: rgb(230 245 242 / 0.5);
-}
-
 :is(.dark .dark\:bg-secondary) {
   --tw-bg-opacity: 1;
   background-color: rgb(59 167 147 / var(--tw-bg-opacity));
@@ -1728,8 +1737,14 @@ body {
   background-color: rgb(51 65 85 / 0.5);
 }
 
-:is(.dark .dark\:bg-slate-800\/50) {
-  background-color: rgb(30 41 59 / 0.5);
+:is(.dark .dark\:bg-slate-500) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-600) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-gradient-dark-1) {
@@ -1759,16 +1774,8 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(248 250 252 / .025)' stroke-dasharray='5 3' transform='scale(1%2c -1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
 
-:is(.dark .dark\:hover\:bg-accent2\/50:hover) {
-  background-color: rgb(196 232 215 / 0.5);
-}
-
 :is(.dark .dark\:hover\:bg-slate-600\/50:hover) {
   background-color: rgb(71 85 105 / 0.5);
-}
-
-:is(.dark .dark\:hover\:bg-slate-700\/50:hover) {
-  background-color: rgb(51 65 85 / 0.5);
 }
 
 @media (min-width: 640px) {
