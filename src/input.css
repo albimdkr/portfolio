@@ -11,7 +11,6 @@ body {
   @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark bg-white bg-opacity-80  backdrop-blur-xl dark:bg-dark2 dark:bg-opacity-85 dark:backdrop-blur-lg;
 }
 
-/* backdrop-blur-xl dark:backdrop-blur-lg */
 
 .border-divider-light {
   @apply border-dark3/10 border;
@@ -24,8 +23,6 @@ body {
 .menu-items-blur {
   @apply backdrop-blur-xl dark:backdrop-blur-lg;
 }
-
-/* border-divider-light border-b bg-white/70 backdrop-blur dark:border-divider-dark dark:bg-slate-900/80 fm:hidden */
 
 /* Hamburger */
 .hamburger-active > span:nth-child(1) {
@@ -42,11 +39,7 @@ body {
 
 @layer components {
   .header-link {
-    @apply mx-2 flex py-1 font-jakarta text-base font-semibold group-hover:text-accent6/100 lg:mx-4;
-  }
-
-  .header-link:hover {
-    @apply text-accent6/100 transition duration-200;
+    @apply mx-2 flex py-1 font-jakarta text-base font-semibold lg:mx-4;
   }
 
   .header-link__label {
