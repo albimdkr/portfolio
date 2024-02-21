@@ -641,8 +641,8 @@ video {
 .nav-link--label--work-lg {
   border-radius: 9999px;
   background-color: rgb(109 184 211 / 0.2);
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
