@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="bg-svg-grid__light dark:bg-svg-grid__dark scroll-smooth">
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,12 +29,12 @@
   </head>
   <body>
     <!-- HEADER section start -->
-    <header
-      class="flex-items-center absolute left-0 top-0 z-10 w-full bg-transparent"
-    >
+    <header class="flex-items-center fixed left-0 top-0 z-[1000] mb-10 w-full">
+      <div id="nav-blur" class="fm:hidden fixed inset-0 h-[3.7rem]"></div>
+      <div id="nav-blur-margin" class="h-2"></div>
       <div class="wrapper-max container">
         <div class="relative flex items-center justify-between">
-          <div class="flex items-center px-4">
+          <div class="flex h-[2.66rem] items-center px-4">
             <nav
               id="nav-menu"
               class="right-4 flex rounded-lg transition duration-300 md:gap-2 lg:static lg:rounded-none lg:bg-transparent"
@@ -97,7 +97,7 @@
                       </svg>
                     </button>
                     <div
-                      class="border-divider-light absolute top-16 flex w-40 flex-col rounded-2xl border bg-white/70 p-2 dark:border dark:border-light2/10 dark:bg-dark1/70"
+                      class="border-divider-light menu-items-blur absolute top-[3.5rem] flex w-40 flex-col rounded-2xl border bg-white/70 p-2 dark:border dark:border-light2/10 dark:bg-dark1/70"
                       id="menu-item"
                     >
                       <a

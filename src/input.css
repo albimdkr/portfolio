@@ -6,10 +6,9 @@ body {
   @apply font-inter;
 }
 
-
 /* navbar fixed */
 .navbar-fixed {
-  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark fixed z-[999] bg-white bg-opacity-80  dark:bg-dark1 dark:bg-opacity-85;
+  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark bg-white bg-opacity-80  backdrop-blur-xl dark:bg-dark1 dark:bg-opacity-85 dark:backdrop-blur-lg;
 }
 
 /* backdrop-blur-xl dark:backdrop-blur-lg */

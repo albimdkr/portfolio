@@ -1,14 +1,16 @@
 // Menut Item: Nav link Work
 const btnWork = document.querySelector("#button-work");
 const menuItem = document.getElementById("menu-item");
+
+// Toggle class hidden saat button ditekan
 btnWork.addEventListener("click", () => {
   menuItem.classList.toggle("hidden");
 });
 
 // navbar fixed
 window.onscroll = () => {
-  const header = document.querySelector("header");
-  const fixedNav = header.offsetTop;
+  const navBlur = document.getElementById("nav-blur");
+  const fixedNav = navBlur.offsetTop;
   const footer = document.querySelector("footer");
   const fixedFooter = footer.offsetTop;
 
@@ -18,12 +20,11 @@ window.onscroll = () => {
     window.pageYOffset > fixedNav &&
     window.pageYOffset < fixedFooter - window.innerHeight
   ) {
-    header.classList.add("navbar-fixed");
+    navBlur.classList.add("navbar-fixed");
     toTop.classList.remove("hidden");
     toTop.classList.add("flex");
-    menuItem.classList.add("menu-items-blur");
   } else {
-    header.classList.remove("navbar-fixed");
+    navBlur.classList.remove("navbar-fixed");
     toTop.classList.remove("flex");
     toTop.classList.add("hidden");
   }
