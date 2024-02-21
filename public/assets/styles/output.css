@@ -708,9 +708,6 @@ video {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(230 245 242 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -724,6 +721,14 @@ video {
   background-color: rgb(59 167 147 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .icon-about) {
+  background-color: rgb(89 193 217 / 0.1);
+}
+
+:is(.dark .icon-about:hover) {
+  background-color: rgb(89 193 217 / 0.2);
 }
 
 .icon-footer {
@@ -1323,11 +1328,6 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-6 {

@@ -93,7 +93,7 @@ body {
   }
 
   .icon-about {
-    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-accent1 text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white;
+    @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-accent1 text-secondaryGray hover:border-secondary hover:bg-secondary hover:text-white dark:bg-accent3/10 dark:hover:bg-accent3/20;
   }
   .icon-footer {
     @apply mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-secondary hover:bg-secondary hover:text-white;
