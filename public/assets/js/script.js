@@ -7,6 +7,15 @@ btnWork.addEventListener("click", () => {
   menuItem.classList.toggle("hidden");
 });
 
+// Navbar link auto close
+const navMenu = document.getElementById("nav-menu");
+
+window.addEventListener("click", (e) => {
+  if (!menuItem.contains(e.target) && !navMenu.contains(e.target)) {
+    menuItem.classList.add("hidden");
+  }
+});
+
 // navbar fixed
 window.onscroll = () => {
   const navBlur = document.getElementById("nav-blur");
@@ -39,12 +48,3 @@ btnTheme.addEventListener("click", () => {
   isDarkMode = !isDarkMode;
   isDarkMode ? html.classList.add("dark") : html.classList.remove("dark");
 });
-
-// Navbar link auto close
-// const navMenu = document.getElementById("nav-menu");
-// window.addEventListener("click", (e) => {
-//   if (e.target != menuItem && e.target != navMenu) {
-//     menuItem.classList.remove("menu-item");
-//     navMenu.classList.add("hidden");
-//   }
-// });
