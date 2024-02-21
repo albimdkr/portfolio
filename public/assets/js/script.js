@@ -1,3 +1,10 @@
+// Menut Item: Nav link Work
+const btnWork = document.querySelector("#button-work");
+const menuItem = document.getElementById("menu-item");
+btnWork.addEventListener("click", () => {
+  menuItem.classList.toggle("hidden");
+});
+
 // navbar fixed
 window.onscroll = () => {
   const header = document.querySelector("header");
@@ -14,28 +21,13 @@ window.onscroll = () => {
     header.classList.add("navbar-fixed");
     toTop.classList.remove("hidden");
     toTop.classList.add("flex");
-    menuItem.classList.add("hidden");
+    menuItem.classList.add("menu-items-blur");
   } else {
     header.classList.remove("navbar-fixed");
     toTop.classList.remove("flex");
     toTop.classList.add("hidden");
   }
 };
-
-// Menut Item: Nav link Work
-const btnWork = document.querySelector("#button-work");
-const navMenu = document.getElementById("nav-menu");
-const menuItem = document.getElementById("menu-item");
-
-btnWork.addEventListener("click", () => {
-  menuItem.classList.toggle("hidden").add("animate");
-});
-
-// Theme
-// const btnTheme = document.getElementById("btn-theme");
-// btnTheme.addEventListener("click", () => {
-//   document.body.classList.toggle("dark");
-// });
 
 // Button switch theme
 let isDarkMode = false;
@@ -48,6 +40,7 @@ btnTheme.addEventListener("click", () => {
 });
 
 // Navbar link auto close
+// const navMenu = document.getElementById("nav-menu");
 // window.addEventListener("click", (e) => {
 //   if (e.target != menuItem && e.target != navMenu) {
 //     menuItem.classList.remove("menu-item");

@@ -30,6 +30,7 @@ module.exports = {
         secondaryGray: "#64748b",
         dark1: "#1d263a",
         dark2: "#161e31",
+        dark3: "#1E293B",
         light1: "#e2e8f0",
         light2: "#f8fafc",
       },
