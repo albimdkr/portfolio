@@ -700,6 +700,23 @@ video {
   opacity: 1;
 }
 
+.text-content--green {
+  --tw-text-opacity: 1;
+  color: rgb(24 111 101 / var(--tw-text-opacity));
+}
+
+:is(.dark .text-content--green) {
+  color: rgb(59 167 147 / 0.75);
+}
+
+.text-color--desc {
+  color: rgb(29 38 58 / 0.7);
+}
+
+:is(.dark .text-color--desc) {
+  color: rgb(226 232 240 / 0.7);
+}
+
 .icon-socmed {
   background-color: rgb(203 213 225 / 0.5);
 }

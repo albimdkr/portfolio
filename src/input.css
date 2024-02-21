@@ -92,6 +92,22 @@ body {
     opacity: 1;
   }
 
+  .text-content--green {
+    @apply text-primary dark:text-secondary/75;
+  }
+
+  .text-color--tittle {
+    @apply text-dark2 dark:text-light2;
+  }
+
+  .text-color--subtittle {
+    @apply text-dark2/90 dark:text-light2/90;
+  }
+
+  .text-color--desc {
+    @apply text-dark2/70 dark:text-light2/70;
+  }
+
   .icon-socmed {
     @apply label-a-white mr-3 flex h-9 w-9 items-center justify-center rounded-full text-dark2;
   }
