@@ -11,7 +11,6 @@ body {
   @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark bg-white bg-opacity-80  backdrop-blur-xl dark:bg-dark2 dark:bg-opacity-85 dark:backdrop-blur-lg;
 }
 
-
 .border-divider-light {
   @apply border-dark3/10 border;
 }
@@ -128,6 +127,10 @@ body {
   .footer-link--soon {
     @apply cursor-not-allowed hover:text-slate-400;
     opacity: 1;
+  }
+
+  .btn-bg-primary {
+    @apply bg-primary hover:bg-primary/95 dark:bg-secondary/70 dark:hover:bg-secondary/75;
   }
 
   .btn-text-color-secondary {
