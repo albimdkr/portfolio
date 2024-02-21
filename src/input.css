@@ -92,7 +92,7 @@ body {
     opacity: 1;
   }
 
-  .text-content--green {
+  .text-color--green {
     @apply text-primary dark:text-secondary/75;
   }
 
