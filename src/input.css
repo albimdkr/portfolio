@@ -120,16 +120,16 @@ body {
     @apply flex h-8 w-full items-center gap-2 whitespace-nowrap text-base leading-5;
   }
 
-  .footer-link:hover {
-    @apply text-secondary transition duration-200;
+  .footer-link-hover {
+    @apply hover:text-dark2 dark:hover:text-light2;
   }
 
   .footer-link__label {
-    @apply rounded-full border border-gray-300 px-2 py-1 text-xs;
+    @apply rounded-full border border-dark2/70 px-2 py-0.5 text-xs dark:border-light2/70;
   }
 
   .footer-link:hover .footer-link__label {
-    @apply text-white;
+    @apply text-dark2/70 dark:text-light2/70;
   }
 
   .footer-link--soon {
