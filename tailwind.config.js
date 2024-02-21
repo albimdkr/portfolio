@@ -23,16 +23,13 @@ module.exports = {
         accent4: "#26828C",
         accent5: "#0E4459",
         accent6: "#6DB8D3",
-        // accent6: "#5CA9C4" valid,
-        // accent6: "#4D99B6",
-        // accent6: "#3A96B1",
         primaryDark: "#0f172a",
         secondaryGray: "#64748b",
-        dark1: "#1d263a",
-        dark2: "#161e31",
+        dark1: "#161e31",
+        dark2: "#1d263a",
         dark3: "#1E293B",
-        light1: "#e2e8f0",
-        light2: "#f8fafc",
+        light1: "#f8fafc",
+        light2: "#e2e8f0",
       },
       screens: {
         "2xl": "1320px",
@@ -40,15 +37,15 @@ module.exports = {
       backgroundImage: (theme) => ({
         "gradient-light-1":
           "linear-gradient(to bottom, " +
-          theme("colors.light1") +
-          ", " +
           theme("colors.light2") +
+          ", " +
+          theme("colors.light1") +
           ")",
         "gradient-light-2":
           "linear-gradient(to bottom, " +
-          theme("colors.light2") +
-          ", " +
           theme("colors.light1") +
+          ", " +
+          theme("colors.light2") +
           ")",
         "gradient-dark-1":
           "linear-gradient(to bottom, " +

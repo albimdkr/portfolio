@@ -8,7 +8,7 @@ body {
 
 /* navbar fixed */
 .navbar-fixed {
-  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark bg-white bg-opacity-80  backdrop-blur-xl dark:bg-dark1 dark:bg-opacity-85 dark:backdrop-blur-lg;
+  @apply dark:border-divider-light shadow-inset__light dark:shadow-inset__dark bg-white bg-opacity-80  backdrop-blur-xl dark:bg-dark2 dark:bg-opacity-85 dark:backdrop-blur-lg;
 }
 
 /* backdrop-blur-xl dark:backdrop-blur-lg */
@@ -122,6 +122,14 @@ body {
   .footer-link--soon {
     @apply cursor-not-allowed hover:text-slate-400;
     opacity: 1;
+  }
+
+  .btn-text-color-secondary {
+    @apply text-primary dark:text-secondary;
+  }
+
+  .btn-bg-secondary {
+    @apply bg-secondary/20 hover:bg-secondary/25 dark:bg-secondary/10 dark:hover:bg-secondary/15;
   }
 
   .animate {
