@@ -12,7 +12,7 @@ body {
 }
 
 .border-divider-light {
-  @apply border-dark3/10 border;
+  @apply border border-dark3/10;
 }
 
 .border-divider-dark {
@@ -66,7 +66,7 @@ body {
   }
 
   .label-a-white {
-    @apply bg-slate-300/50 hover:bg-slate-300/70 dark:bg-slate-700/40 dark:text-slate-100 dark:hover:bg-slate-700/70;
+    @apply bg-slate-300/50 hover:bg-slate-300/60 dark:bg-slate-700/40 dark:text-slate-100 dark:hover:bg-slate-700/50;
   }
 
   .wrapper-max {
@@ -143,6 +143,15 @@ body {
 
   .animate {
     @apply transition duration-200 ease-in-out;
+  }
+
+  .label {
+    @apply label-a-white relative overflow-hidden rounded-[0.345rem] px-3 py-1 text-xs;
+    /* bg-slate-300/50 dark:bg-slate-700/50 dark:text-slate-100*/
+  }
+
+  .label-indicator {
+    @apply absolute bottom-0 left-0 right-0 h-[.125rem] rounded-full bg-dark2/20 dark:bg-light2/20;
   }
 }
 
