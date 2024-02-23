@@ -1993,6 +1993,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:sticky {
+    position: sticky;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2112,6 +2116,10 @@ body {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-5 {
