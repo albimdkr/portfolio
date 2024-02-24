@@ -966,6 +966,14 @@ video {
   top: 86px;
 }
 
+.top-\[px\] {
+  top: px;
+}
+
+.top-\[80px\] {
+  top: 80px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1030,12 +1038,12 @@ video {
   margin-left: -0.125rem;
 }
 
-.-ml-2 {
-  margin-left: -0.5rem;
+.-ml-10 {
+  margin-left: -2.5rem;
 }
 
-.-ml-8 {
-  margin-left: -2rem;
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
 .-mt-12 {
@@ -1126,20 +1134,32 @@ video {
   margin-top: 1rem;
 }
 
-.-ml-\[2\] {
-  margin-left: -2;
+.mt-11 {
+  margin-top: 2.75rem;
 }
 
-.-ml-\[2\%\] {
-  margin-left: -2%;
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
-.-ml-7 {
-  margin-left: -1.75rem;
+.mt-\[2\.27r\] {
+  margin-top: 2.27r;
 }
 
-.-ml-10 {
-  margin-left: -2.5rem;
+.mt-\[2\.27rem\] {
+  margin-top: 2.27rem;
+}
+
+.mt-\[2\] {
+  margin-top: 2;
+}
+
+.mt-\[2\.26rem\] {
+  margin-top: 2.26rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -1580,6 +1600,14 @@ video {
   padding-top: 9rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1993,10 +2021,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:sticky {
-    position: sticky;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -2058,10 +2082,6 @@ body {
     top: 86px;
   }
 
-  .md\:-ml-12 {
-    margin-left: -3rem;
-  }
-
   .md\:-ml-3 {
     margin-left: -0.75rem;
   }
@@ -2070,44 +2090,12 @@ body {
     margin-left: -1rem;
   }
 
-  .md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .md\:-ml-1 {
-    margin-left: -0.25rem;
-  }
-
-  .md\:-ml-16 {
-    margin-left: -4rem;
-  }
-
-  .md\:-ml-14 {
-    margin-left: -3.5rem;
-  }
-
-  .md\:-ml-20 {
-    margin-left: -5rem;
-  }
-
-  .md\:-ml-\[65px\] {
-    margin-left: -65px;
-  }
-
-  .md\:-ml-\[70px\] {
-    margin-left: -70px;
-  }
-
-  .md\:-ml-\[5rem\] {
-    margin-left: -5rem;
-  }
-
-  .md\:-ml-\[8rem\] {
-    margin-left: -8rem;
-  }
-
   .md\:-ml-\[2rem\] {
     margin-left: -2rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .md\:block {
@@ -2152,11 +2140,6 @@ body {
 
   .md\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .md\:bg-accent3 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(89 193 217 / var(--tw-bg-opacity));
   }
 
   .md\:py-4 {
