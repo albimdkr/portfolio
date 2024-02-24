@@ -153,6 +153,14 @@ body {
   .label-indicator {
     @apply absolute bottom-0 left-0 right-0 h-[.125rem] rounded-full bg-dark2/20 dark:bg-light2/20;
   }
+
+  .project--label {
+    @apply text-color--green rounded-xl bg-secondary/20 px-2 py-1 text-xs hover:bg-secondary/25 dark:bg-secondary/10 dark:hover:bg-secondary/15;
+  }
+
+  .card--project {
+    @apply border-divider-dark dark:border-divider-light rounded-lg bg-white p-5 backdrop-blur-xl dark:border-light2/10 dark:bg-dark2/80 dark:shadow-none dark:backdrop-blur-lg;
+  }
 }
 
 @layer utilities {
