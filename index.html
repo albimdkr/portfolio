@@ -962,7 +962,7 @@
             <h2
               class="text-color--tittle lg:text-1xl text-3xl font-bold sm:text-4xl"
             >
-              Learn, Apply & Share</span>
+              Learn, Apply & Share
             </h2>
             <p class="text-md text-color--desc mt-2 font-medium md:text-lg">
               In my earlier blogs, I've covered a variety of topics, providing
@@ -1143,15 +1143,14 @@
             <h2
               class="lg:text-1xl text-3xl font-bold text-dark2 dark:text-light2 sm:text-4xl"
             >
-             Drop me a line.</span>
+              Drop me a line
             </h2>
-            <p class="text-md text-color--desc font-medium md:text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              quibusdam?
+            <p class="text-md text-color--desc mt-2 font-medium md:text-lg">
+              Feel free to reach out with any inquiries or opportunities
             </p>
           </div>
         </div>
-        <form action="#">
+        <form id="contact-form">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-color--green text-base font-bold"
@@ -1423,5 +1422,26 @@
     <!-- BACK TO TOP section end -->
 
     <script src="/public/assets/js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js">
+      (function () {
+        emailjs.init("PbKsw0UQEDG7Wu7AH");
+      })();
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs.sendForm("service_jns03gs", "template_6kjfsuv", this).then(
+            function (response) {
+              alert("Your message has been sent successfully!");
+              console.log("SUCCESS!", response.status, response.text);
+            },
+            function (error) {
+              alert("Oops... An error occurred, please try again later");
+              console.error("FAILED...", error);
+            },
+          );
+        });
+    </script>
   </body>
 </html>
