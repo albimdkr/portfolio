@@ -19,10 +19,11 @@ window.addEventListener("click", (e) => {
 // navbar fixed
 window.onscroll = () => {
   const navBlur = document.getElementById("nav-blur");
+  const navWraper = document.getElementById("nav-wrapper");
+  // const header = document.getElementById("header");
   const fixedNav = navBlur.offsetTop;
   const footer = document.querySelector("footer");
   const fixedFooter = footer.offsetTop;
-
   const toTop = document.getElementById("to-top");
 
   if (
@@ -36,6 +37,12 @@ window.onscroll = () => {
     navBlur.classList.remove("navbar-fixed");
     toTop.classList.remove("flex");
     toTop.classList.add("hidden");
+  }
+
+  if (window.pageYOffset < fixedFooter - window.innerHeight) {
+    navWraper.classList.remove("hidden");
+  } else {
+    navWraper.classList.add("hidden");
   }
 };
 
