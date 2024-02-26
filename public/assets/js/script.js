@@ -53,5 +53,11 @@ const html = document.querySelector("html");
 
 btnTheme.addEventListener("click", () => {
   isDarkMode = !isDarkMode;
-  isDarkMode ? html.classList.add("dark") : html.classList.remove("dark");
+  if (isDarkMode) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
 });
